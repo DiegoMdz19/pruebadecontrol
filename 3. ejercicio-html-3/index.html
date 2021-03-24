@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Ejercicio HTML 1</title>
+</head>
+
+<body>
+
+  <form method="GET" action=""> <!--Da error al verificar el action-->
+    <fieldset>
+      <legend>Datos personales</legend>
+        <label for="nombre">Nombre:</label>
+        <input required autofocus type="text" id="nombre"><br>
+
+        <label for="email">Email:</label>
+        <input required type="email" id="email"><br>
+
+        <label for="tel">Teléfono:</label>
+        <input type="tel" id="tel" readonly placeholder="678598689" ><br>
+
+        <label for="página">Página Web:</label>
+        <input id="página" size="30" type="url" placeholder="Escribe la URL de tu página web personal"><br>
+    </fieldset>
+    <fieldset>
+      <legend>Inputs Fechas y horarios</legend>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha"><br>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora"><br>
+
+        <label for="fechahora">Fecha y hora:</label>
+        <input type="datetime-local" id="fechahora"><br>
+
+        <label for="mes">Mes:</label>
+        <input type="month" id="mes"><br>
+
+        <label for="semana">Semana:</label>
+        <input type="week" id="semana"><br>
+    </fieldset>
+    <fieldset>
+      <legend>Otros inputs</legend>
+        <label for="favnumber">Número:</label>
+        <input max="10" min="-10" type="number" id="favnumber"><br>
+
+        <label for="search">Búsqueda:</label>>
+        <input type="search" id="search" disabled><br>
+
+        <label for="favcolor">Color:</label>
+        <input type="color" id="favcolor"><br>
+    </fieldset>
+    <input class="enviar" type="submit">
+
+  </form>
+
+</body>
+
+</html>

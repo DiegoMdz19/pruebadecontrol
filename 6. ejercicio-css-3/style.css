@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    margin: 0;
+    justify-content: center;
+}
+
+header > h1 {
+    font-size: 3rem;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+header > h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+article {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    margin: auto;
+    padding: 2rem;
+}
+
+article section > h3 {
+    font-size: 2rem;
+    color: rgb(68, 68, 68);
+    border-bottom: 2px solid rgb(68, 68, 68);
+}
+
+.textImage > img {
+    display: block;
+    float: right;
+    margin-left: 1rem;
+    width: 20rem;
+    height: 20rem;
+}
+
+.formul {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.formul > input {
+    background-color: rgb(68, 68, 68);
+    border: none;
+    width: 30rem;
+}
+
+.coment {
+    height: 5rem;
+}
+
+.boton {
+    color: white;
+    background-color: black;
+    border: none;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    width: 5rem;
+}
+
+@media (max-width: 1200px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .textImage {
+        justify-content: center;
+        text-align: center;
+    }
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 28px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    article > section > h3 {
+        font-size: 20px;
+    }
+    .textImage > img {
+        float: none;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    article {
+        max-width: 20rem;
+    }
+    .formul > input {
+        width: 20rem;
+    }
+}

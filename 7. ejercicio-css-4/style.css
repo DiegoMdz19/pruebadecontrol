@@ -1,0 +1,63 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-areas:
+        'header header header'
+        'ronnie margie laura';
+    background-color: orange;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    height: 50rem;
+}
+
+header {
+    grid-area: header;
+}
+
+header > h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 6.25rem;
+}
+
+article > section > img {
+    border-radius: 100rem;
+    width: 10rem;
+}
+
+section {
+    display: inline-block;
+    width: 17rem;
+    height: 30rem;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2rem;
+    box-shadow: 1px 1px 10px;
+    margin: 2rem;
+}
+
+section > i {
+    font-size: 2rem;
+    color: rgb(54, 54, 54);
+}
+
+section > p {
+    background-color: rgb(125, 32, 176);
+    margin-bottom: 0;
+    padding: 0;
+    height: 100;
+}
+
+.ronnie {
+    grid-area: ronnie;
+}
+
+.margie {
+    grid-area: margie;
+}
+
+.laura {
+    grid-area: laura;
+}
